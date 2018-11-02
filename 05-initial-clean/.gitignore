@@ -1,0 +1,7 @@
+/target/
+/log.base_IS_UNDEFINED/
+/.settings/
+/log/
+/logs/
+.project
+.classpath
