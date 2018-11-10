@@ -1,4 +1,6 @@
 package szu.vander.baseclass;
+
+import static szu.vander.util.Printer.*;
 /**
 * @author      : Vander
 * @date        : 2018-11-09
@@ -14,7 +16,7 @@ public class Test {
 
 class A {
 	A() {
-		System.out.println("A()");
+		print("A()");
 	}
 }
 
