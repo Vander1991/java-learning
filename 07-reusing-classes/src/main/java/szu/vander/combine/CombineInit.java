@@ -1,4 +1,4 @@
-package szu.vander.tostring;
+package szu.vander.combine;
 
 import static szu.vander.util.Printer.*;
 
@@ -28,7 +28,7 @@ public class CombineInit {
 		toy = 3.14f;
 		castile = new Soap();
 	}
-	
+	// 实例初始化
 	{
 		i = 47;
 	}
