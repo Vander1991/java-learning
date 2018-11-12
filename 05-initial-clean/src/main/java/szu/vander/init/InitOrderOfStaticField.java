@@ -2,7 +2,7 @@ package szu.vander.init;
 /**
 * @author      : Vander
 * @date        : 2018-11-01
-* @description ： 首先static的优先初始化，且初始化次数为1次，接着是普通变量，然后才是构造函数的调用
+* @description ： 首先static的优先初始化，且初始化次数为1次，接着是普通变量，然后才是构造函数的调用,static块跟static变量的执行顺序是根据定义的顺序来的
 */
 public class InitOrderOfStaticField {
 
@@ -22,6 +22,10 @@ public class InitOrderOfStaticField {
 
 class Bowl{
 	
+	static {
+		System.out.println("static1 Bowl");
+	}
+	
 	public Bowl(int marker) {
 		System.out.println("Bowl(" + marker + ")");
 	}
@@ -30,9 +34,17 @@ class Bowl{
 		System.out.println("f1(" + marker + ")");
 	}
 	
+	static {
+		System.out.println("static2 Bowl");
+	}
+	
 }
 
 class Table {
+	
+	static {
+		System.out.println("static1 Table");
+	}
 	
 	static Bowl bowl1 = new Bowl(1);
 	
@@ -43,6 +55,10 @@ class Table {
 	
 	public void f2(int marker) {
 		System.out.println("f2(" + marker + ")");
+	}
+	
+	static {
+		System.out.println("static2 Table");
 	}
 	
 	static Bowl bowl2 = new Bowl(2);
