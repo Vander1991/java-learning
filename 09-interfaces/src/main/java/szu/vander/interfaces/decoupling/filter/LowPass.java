@@ -1,4 +1,4 @@
-package szu.vander.interfaces.filter;
+package szu.vander.interfaces.decoupling.filter;
 
 public class LowPass extends Filter {
 	double cutoff;

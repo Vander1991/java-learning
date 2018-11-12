@@ -1,5 +1,5 @@
 //: interfaces/filters/BandPass.java
-package szu.vander.interfaces.filter;
+package szu.vander.interfaces.decoupling.filter;
 
 public class BandPass extends Filter {
 	double lowCutoff, highCutoff;
