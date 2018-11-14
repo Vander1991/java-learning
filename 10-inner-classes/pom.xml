@@ -3,4 +3,14 @@
   <groupId>szu.vander</groupId>
   <artifactId>10-inner-classes</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+  <dependencies>
+	  <dependency>
+	  	<groupId>szu.vander</groupId>
+	  	<artifactId>03-operator</artifactId>
+	  	<version>0.0.1-SNAPSHOT</version>
+	  	<type>jar</type>
+	  </dependency>
+  </dependencies>    
+  
 </project>
