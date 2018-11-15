@@ -17,35 +17,13 @@ interface Lethal {
 	void kill();
 }
 
-class DragonZilla implements DangerousMonster {
-	public void menace() {
-	}
-
-	public void destroy() {
-	}
-}
-
 interface Vampire extends DangerousMonster, Lethal {
 	void drinkBlood();
 }
 
-class VeryBadVampire implements Vampire {
-	public void menace() {
-	}
-
-	public void destroy() {
-	}
-
-	public void kill() {
-	}
-
-	public void drinkBlood() {
-	}
-}
-
 public class HorrorShow {
 	
-	public DangerousMonster getDangerousMonster() {
+	public DangerousMonster getMonster() {
 		return new DangerousMonster() {
 			public void menace() {
 				System.out.println("DangerousMonster menace");
@@ -55,6 +33,26 @@ public class HorrorShow {
 				System.out.println("DangerousMonster destroy");
 			}
 			
+		};
+	}
+	
+	public Vampire getVampire() {
+		return new Vampire() {
+			public void destroy() {
+				System.out.println("Vampire destroy");
+			}
+
+			public void menace() {
+				System.out.println("Vampire menace");
+			}
+
+			public void kill() {
+				System.out.println("Vampire kill");
+			}
+
+			public void drinkBlood() {
+				System.out.println("Vampire drinkBlood");
+			}
 		};
 	}
 	
@@ -72,10 +70,11 @@ public class HorrorShow {
 	}
 
 	public static void main(String[] args) {
-		DangerousMonster barney = new DragonZilla();
+		HorrorShow horrorShow = new HorrorShow();
+		DangerousMonster barney = horrorShow.getMonster();
 		menace(barney);
 		menaceAndDestroy(barney);
-		Vampire vlad = new VeryBadVampire();
+		Vampire vlad = horrorShow.getVampire();
 		menace(vlad);
 		menaceAndDestroy(vlad);
 		kill(vlad);
