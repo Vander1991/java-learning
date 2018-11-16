@@ -4,13 +4,18 @@ package szu.vander.innerclass.controlframework;
 
 public abstract class Event {
 	private long eventTime;
-	protected final long delayTime;
+	protected long delayTime;
 
 	public Event(long delayTime) {
 		this.delayTime = delayTime;
 		start();
 	}
 
+	public void setDelayTime(long delayTime) {
+		this.delayTime = delayTime;
+		start();
+	}
+	
 	public void start() { // Allows restarting
 		eventTime = System.nanoTime() + delayTime;
 	}

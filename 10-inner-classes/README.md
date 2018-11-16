@@ -19,6 +19,16 @@
 		个定义，可以看出内部类是面向对象的闭包，因为它不仅包含外围类对象（创建内部类的作用域）的信息
 		还自动拥有一个指向此外围类对象的引用，在此作用域内，内部类有权操作所有的成员，包括private
 		成员
+		内部类标志符：
+			每个类都有一个class文件LocalInnerClass.java为例子
+				Counter.class
+				LocalInnerClass$1.class（说明是第一个匿名内部类）
+				LocalInnerClass$1LocalCounter.class
+				LocalInnerClass.class
+			如果内部类是嵌套在别的内部类之中的，只需直接将它们的名字加在其外围类标识符与"$"的后面
 # 总结：
-
+	使用内部类条件：
+		1、需要控制客户端对类的访问的时候
+		2、像工厂模式那样为了达到更一致的封装
+		3、为了实现多重继承
 

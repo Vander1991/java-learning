@@ -55,6 +55,8 @@ public class GreenhouseControls extends Controller {
 		@Override
 		public void action() {
 			fans = true;
+			addEvent(this);
+			this.start();
 		}
 		
 		public String toString() {
@@ -105,11 +107,12 @@ public class GreenhouseControls extends Controller {
 		GreenhouseControls gc = new GreenhouseControls();
 		// Instead of hard-wiring, you could parse
 		// configuration information from a text file here:
-		gc.addEvent(gc.new Bell(900));
-		Event[] eventList = { gc.new LightOn(200), gc.new FansOpen(400)};
-		gc.addEvent(gc.new Restart(2000, eventList));
+//		gc.addEvent(gc.new Bell(900));
+//		Event[] eventList = { gc.new LightOn(200), gc.new FansOpen(400)};
+//		gc.addEvent(gc.new Restart(2000, eventList));
+		gc.addEvent(gc.new FansOpen((long)Math.pow(10,9)));
 		if (args.length == 1)
-			gc.addEvent(new GreenhouseControls.Terminate(new Integer(args[0])));
+			gc.addEvent(new GreenhouseControls.Terminate(new Long(args[0])));
 		gc.run();
 	}
 } /// :~
