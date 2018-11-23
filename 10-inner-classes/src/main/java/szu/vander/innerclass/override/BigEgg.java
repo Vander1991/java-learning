@@ -2,7 +2,7 @@ package szu.vander.innerclass.override;
 
 //: innerclasses/BigEgg.java
 // An inner class cannot be overriden like a method.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 class Egg {
 	private Yolk y;

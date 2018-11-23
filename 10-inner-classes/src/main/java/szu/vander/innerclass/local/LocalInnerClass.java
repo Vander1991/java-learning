@@ -2,7 +2,7 @@ package szu.vander.innerclass.local;
 
 //: innerclasses/LocalInnerClass.java
 // Holds a sequence of Objects.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

@@ -1,7 +1,7 @@
 package szu.vander.innerclass.anonymous.factories;
 
 //: innerclasses/Factories.java
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 /**
  * 

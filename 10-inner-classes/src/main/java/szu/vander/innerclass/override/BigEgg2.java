@@ -2,7 +2,7 @@ package szu.vander.innerclass.override;
 
 //: innerclasses/BigEgg2.java
 // Proper inheritance of an inner class.
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 /**
  * 

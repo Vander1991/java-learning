@@ -2,7 +2,7 @@ package szu.vander.innerclass.anonymous;
 
 //: innerclasses/AnonymousConstructor.java
 // Creating a constructor for an anonymous inner class.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

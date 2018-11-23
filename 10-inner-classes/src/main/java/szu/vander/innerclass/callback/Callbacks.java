@@ -2,7 +2,7 @@
 // Using inner classes for callbacks
 package szu.vander.innerclass.callback;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 interface Incrementable {
 	void increment();

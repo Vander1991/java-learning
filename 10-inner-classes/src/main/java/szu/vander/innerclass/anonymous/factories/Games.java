@@ -2,7 +2,7 @@ package szu.vander.innerclass.anonymous.factories;
 
 //: innerclasses/Games.java
 // Using anonymous inner classes with the Game framework.
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 interface Game {
 	boolean move();
