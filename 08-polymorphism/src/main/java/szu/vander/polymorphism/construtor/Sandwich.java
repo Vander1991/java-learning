@@ -2,7 +2,7 @@
 // Order of constructor calls.
 package szu.vander.polymorphism.construtor;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

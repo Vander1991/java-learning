@@ -1,6 +1,6 @@
 package szu.vander.polymorphism.music;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 import java.util.Random;
 

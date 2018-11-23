@@ -2,7 +2,7 @@ package szu.vander.polymorphism.combineorinherit;
 
 // Dynamically changing the behavior of an object
 // via composition (the "State" design pattern).
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

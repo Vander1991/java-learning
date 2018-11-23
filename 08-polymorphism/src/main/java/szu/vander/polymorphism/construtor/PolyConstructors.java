@@ -2,7 +2,7 @@ package szu.vander.polymorphism.construtor;
 
 // Constructors and polymorphism
 // don't produce what you might expect.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 
