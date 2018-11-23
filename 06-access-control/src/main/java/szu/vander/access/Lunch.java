@@ -1,6 +1,6 @@
 package szu.vander.access;
 
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 
 /**
