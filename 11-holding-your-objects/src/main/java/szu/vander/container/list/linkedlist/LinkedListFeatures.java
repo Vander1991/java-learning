@@ -1,7 +1,7 @@
 package szu.vander.container.list.linkedlist;
 
 //: holding/LinkedListFeatures.java
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 import java.util.LinkedList;
 

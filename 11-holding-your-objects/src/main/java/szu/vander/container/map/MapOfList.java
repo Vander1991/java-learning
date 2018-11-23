@@ -1,7 +1,7 @@
 //: holding/MapOfList.java
 package szu.vander.container.map;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 import java.util.Arrays;
 import java.util.HashMap;

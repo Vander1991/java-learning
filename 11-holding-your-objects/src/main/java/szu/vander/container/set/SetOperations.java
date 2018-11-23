@@ -1,6 +1,6 @@
 package szu.vander.container.set;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 //: holding/SetOperations.java
 import java.util.Collections;

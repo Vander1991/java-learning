@@ -1,6 +1,6 @@
 package szu.vander.container.map;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 import java.util.HashMap;
 import java.util.Map;
