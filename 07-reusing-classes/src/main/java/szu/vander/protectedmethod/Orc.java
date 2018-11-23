@@ -1,6 +1,6 @@
 package szu.vander.protectedmethod;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 /**
 * @author      : Vander
 * @date        : 2018-11-09

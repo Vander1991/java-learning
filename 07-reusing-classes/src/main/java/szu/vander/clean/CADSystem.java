@@ -1,6 +1,6 @@
 package szu.vander.clean;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
 * @author      : Vander
