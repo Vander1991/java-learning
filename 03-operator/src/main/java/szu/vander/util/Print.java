@@ -5,7 +5,7 @@ package szu.vander.util;
 * @date        : 2018-11-01
 * @description ： 
 */
-public class Printer {
+public class Print {
 	
 	public static void print(String value) {
 		System.out.println(value);
