@@ -1,7 +1,7 @@
 package szu.vander.interfaces.factory;
 
 // A Game framework using Factory Methods.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

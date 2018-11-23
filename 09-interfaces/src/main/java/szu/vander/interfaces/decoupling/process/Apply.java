@@ -1,6 +1,6 @@
 package szu.vander.interfaces.decoupling.process;
 
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 import java.util.Arrays;
 

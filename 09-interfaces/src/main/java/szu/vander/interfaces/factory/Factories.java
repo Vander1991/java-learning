@@ -1,7 +1,7 @@
 package szu.vander.interfaces.factory;
 
 //: interfaces/Factories.java
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 interface Service {
 	void method1();

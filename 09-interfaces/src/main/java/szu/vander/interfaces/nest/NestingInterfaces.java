@@ -1,6 +1,6 @@
 package szu.vander.interfaces.nest;
 
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 
