@@ -1,7 +1,7 @@
 package szu.vander.exception.finallyclean.returnfinally;
 
 //: exceptions/MultipleReturns.java
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 /**
  * 

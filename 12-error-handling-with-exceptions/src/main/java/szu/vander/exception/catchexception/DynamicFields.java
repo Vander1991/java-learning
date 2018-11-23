@@ -3,7 +3,7 @@ package szu.vander.exception.catchexception;
 //: exceptions/DynamicFields.java
 // A Class that dynamically adds fields to itself.
 // Demonstrates exception chaining.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

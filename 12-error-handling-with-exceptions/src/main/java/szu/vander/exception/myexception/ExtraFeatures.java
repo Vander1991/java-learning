@@ -2,7 +2,7 @@ package szu.vander.exception.myexception;
 
 //: exceptions/ExtraFeatures.java
 // Further embellishment of exception classes.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 

@@ -2,7 +2,7 @@ package szu.vander.exception.catchexception;
 
 //: exceptions/ExceptionMethods.java
 // Demonstrating the Exception Methods.
-import static szu.vander.util.Printer.print;
+import static szu.vander.util.Print.print;
 
 public class ExceptionMethods {
 	public static void main(String[] args) {

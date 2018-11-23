@@ -2,7 +2,7 @@ package szu.vander.exception.finallyclean.compare;
 
 //: exceptions/AlwaysFinally.java
 // Finally is always executed.
-import static szu.vander.util.Printer.*;
+import static szu.vander.util.Print.*;
 
 /**
  * 
