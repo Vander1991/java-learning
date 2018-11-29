@@ -8,6 +8,16 @@ import static szu.vander.util.Print.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 
+* @author      : Vander
+* @date        : 2018-11-28
+* @description : 先使用Pattern.compile()编译你的正则表达式，它会根据你的String类型的正则表达式生成一个Pattern对象
+* 				接着将想要检索的字符串传入Pattern对象的matcher方法，matcher方法会生成一个Matcher对象，它有很多功能
+* 				例如：
+* 					使用replaceAll将所有匹配部分替换成你传入的参数。
+* 					
+ */
 public class TestRegularExpression {
 	public static void main(String[] args) {
 		if (args.length < 2) {
