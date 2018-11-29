@@ -39,5 +39,12 @@ public class Print {
 		System.out.println(value);
 	}
 
+	public static void printnb(String value) {
+		System.out.print(value);
+	}
+	
+	public static void print() {
+		System.out.println();
+	}
 	
 }
