@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 /target/
 /log.base_IS_UNDEFINED/
 /.settings/
 /log/
 /logs/
 .project
+=======
+/target/
+/log.base_IS_UNDEFINED/
+/.settings/
+/log/
+/logs/
+.project
+>>>>>>> 3fd38e4ba9a42f7ea4136538a0cc796a9bcebacc
 .classpath

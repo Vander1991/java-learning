@@ -4,5 +4,4 @@
 	使用循环，最好创建一个StringBuilder对象，来构造最后结果
 	
 # 总结：
-	Java对字符串操作的支持已经相当完善，在处理String的时候要注意如何在恰当的地方使用StringBuilder
-	
+	Java对字符串操作的支持已经相当完善，在处理String的时候要注意如何在恰当的地方使用StringBuilders
