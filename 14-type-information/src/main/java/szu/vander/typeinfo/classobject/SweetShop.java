@@ -1,4 +1,4 @@
-package szu.vander.typeinfo.classloader;
+package szu.vander.typeinfo.classobject;
 
 //: typeinfo/SweetShop.java
 // Examination of the way the class loader works.

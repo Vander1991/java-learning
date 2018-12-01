@@ -1,6 +1,6 @@
 //: typeinfo/toys/ToyTest.java
 // Testing class Class.
-package szu.vander.typeinfo.classloader;
+package szu.vander.typeinfo.classobject;
 
 import static szu.vander.util.Print.*;
 
