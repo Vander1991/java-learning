@@ -1,9 +1,28 @@
-package szu.vander.typeinfo.checkbeforecast.pet;
+package szu.vander.typeinfo.checkbeforecast.pet.impl1;
 
 import static szu.vander.util.Print.*;
 
 import java.util.HashMap;
 
+import szu.vander.typeinfo.checkbeforecast.pet.Cat;
+import szu.vander.typeinfo.checkbeforecast.pet.Dog;
+import szu.vander.typeinfo.checkbeforecast.pet.Hamster;
+import szu.vander.typeinfo.checkbeforecast.pet.Manx;
+import szu.vander.typeinfo.checkbeforecast.pet.Mouse;
+import szu.vander.typeinfo.checkbeforecast.pet.Mutt;
+import szu.vander.typeinfo.checkbeforecast.pet.Pet;
+import szu.vander.typeinfo.checkbeforecast.pet.PetCreator;
+import szu.vander.typeinfo.checkbeforecast.pet.Pug;
+import szu.vander.typeinfo.checkbeforecast.pet.Rat;
+import szu.vander.typeinfo.checkbeforecast.pet.Rodent;
+
+/**
+ * 
+* @author      : Vander
+* @date        : 2018-12-01
+* @description : instanceof有严格的限制：只可将其与命名类型做比较而不能与Class对象做比较
+* 				如果程序中有很多的instanceof表达式，可能就说明你的设计存在缺陷
+ */
 public class PetCount {
 	static class PetCounter extends HashMap<String, Integer> {
 		public void count(String type) {
