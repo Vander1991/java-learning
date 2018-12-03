@@ -4,4 +4,4 @@ package szu.vander.util;
 
 public interface Generator<T> {
 	T next();
-} /// :~
+}
