@@ -25,12 +25,17 @@ import szu.vander.typeinfo.checkbeforecast.pet.Rodent;
 * @author      : Vander
 * @date        : 2018-12-02
 * @description : 使用类字面常量
+* 				生成Pet继承结构中的对象存在这一个问题，即每次向该继承结构添加新的
+* 				Pet类型时，必须将其添加到allTypes中，如果系统中已经存在了继承
+* 				结构的常规的基础，然后在其上要添加更多的类，那么就有可能会出现问题？？？？？？
  */
 public class LiteralPetCreator extends PetCreator {
 	// No try block needed.
-	public static final List<Class<? extends Pet>> allTypes = Collections
-			.unmodifiableList(Arrays.asList(Pet.class, Dog.class, Cat.class, Rodent.class, Mutt.class, Pug.class,
-					EgyptianMau.class, Manx.class, Cymric.class, Rat.class, Mouse.class, Hamster.class));
+	public static final List<Class<? extends Pet>> allTypes = 
+			Collections.unmodifiableList(Arrays.asList(
+					Pet.class, Dog.class, Cat.class, Rodent.class, Mutt.class, 
+					Pug.class, EgyptianMau.class, Manx.class, Cymric.class, 
+					Rat.class, Mouse.class, Hamster.class));
 	// Types for random creation:
 	private static final List<Class<? extends Pet>> types = allTypes.subList(allTypes.indexOf(Mutt.class),
 			allTypes.size());
