@@ -1,4 +1,4 @@
-package szu.vander.typeinfo.reflect;
+package szu.vander.typeinfo.reflect.exercise.exercise18;
 
 import static szu.vander.util.Print.*;
 
@@ -14,11 +14,10 @@ import java.util.regex.Pattern;
  * 
 * @author      : Vander
 * @date        : 2018-12-03
-* @description : 通常是不需要使用反射的，反射在Java中是用来支持其他特性的，例如对象序列化和JavaBean
-* 				此程序的功能：输入一个参数，会输出所对应的所有方法（编译之后的）
-* 						  输入两个参数，会去匹配方法名中与第二个参数匹配的方法，并输出
+* @description : 修改正则表达式，去掉native和final关键字 
+* 
  */
-public class ShowMethods {
+class ShowMethods {
 	private static String usage = "usage:\n" 
 			+ "ShowMethods qualified.class.name\n"
 			+ "To show all methods in class or:\n"
@@ -26,24 +25,16 @@ public class ShowMethods {
 			+ "To search for methods involving 'word'";
 	
 	/** 此模式用replaceAll将多个w+.给替换掉    (\w	A word character: [a-zA-Z_0-9]) */
-	private static Pattern p = Pattern.compile("\\w+\\.");
-
-	public ShowMethods() {
-		
-	}
+	private static Pattern p = Pattern.compile("\\w+\\.|native |final ");
 	
-	public ShowMethods(String args[]) {
-		
-	}
-	
-	public static void main(String[] args) {
+	public static void showMethod(String[] args) {
 		if (args.length < 1) {
 			print(usage);
 			System.exit(0);
 		}
 		int lines = 0;
 		try {
-			// args[0] = "szu.vander.typeinfo.reflect.ShowMethods"
+			// args[0] = "szu.vander.typeinfo.reflect.exercise.exercise18.ShowMethods"
 			Class<?> c = Class.forName(args[0]);
 			Method[] methods = c.getMethods();
 			Constructor[] ctors = c.getConstructors();

@@ -50,7 +50,7 @@ public class ToyTest {
 	public static void main(String[] args) {
 		Class c = null;
 		try {
-			c = Class.forName("szu.vander.typeinfo.classloader.FancyToy");
+			c = Class.forName("szu.vander.typeinfo.classobject.FancyToy");
 		} catch (ClassNotFoundException e) {
 			print("Can't find FancyToy");
 			System.exit(1);
