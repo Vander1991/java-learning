@@ -1,0 +1,22 @@
+package szu.vander.generic.interfaces.exercise.exercise8;
+/**
+* @author      : Vander
+* @date        : 2018-12-10
+* @description ：   
+*/
+public class GoodGuys extends StoryCharacters {
+
+	public GoodGuys() {
+	}
+	
+	public GoodGuys(String name) {
+		super(name);
+	}
+
+	static class Desc {
+		public static String getDesc() {
+			return "I am good guy!";
+		}
+	}
+	
+}
