@@ -15,6 +15,14 @@ class Fruit {
 }
 
 class Apple extends Fruit {
+	
+	private final int appleId = counter++; 
+	
+	private static int counter=0;
+	
+	public String toString() {
+		return "Apple(" + appleId + ")";
+	}
 }
 
 class Jonathan extends Apple {

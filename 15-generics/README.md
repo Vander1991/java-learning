@@ -33,6 +33,10 @@
 		擦除的问题：
 			泛型不能用于显式地引用运行时类型的操作之中，例如转型、instanceof操作和new表达式。
 	通配符：
+		数组对象可以保留有关它们包含的对象类型的规则。
+		List<? extends Fruit> flist = Arrays.asList(new Apple())-》支持Fruit f = flist.get(0);
+			如果我们指定泛型参数为 <? extends Fruit> 时，add() 方法的参数变为 ? extends Fruit，编译器无法
+		判断这个参数接受的到底是 Fruit 的哪种类型，所以它不会接受任何类型。
 		读的时候用协变<? extends T>，写的时候用逆变<? super T>
 	
 # 总结：
