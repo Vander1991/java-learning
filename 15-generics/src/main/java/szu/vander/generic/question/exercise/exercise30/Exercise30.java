@@ -26,7 +26,10 @@ class Holder<T> {
 public class Exercise30 {
 
 	public static void main(String[] args) {
-		Holder<Character> charHolder = new Holder<Character>('c');
+		Holder<Character> charHolder = new Holder<Character>('a');
+		charHolder.set('b');
+		char b = charHolder.get();
+		System.out.println('b' == b);
 	}
 
 }
