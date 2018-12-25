@@ -38,6 +38,8 @@
 			如果我们指定泛型参数为 <? extends Fruit> 时，add() 方法的参数变为 ? extends Fruit，编译器无法
 		判断这个参数接受的到底是 Fruit 的哪种类型，所以它不会接受任何类型。
 		读的时候用协变<? extends T>，写的时候用逆变<? super T>
-	
+	自限定的类型：
+		class Subtype extends BasicHolder<Subtype>这样是允许的，相当于可以限定其内部T的范围是Subtype及其子类
+		
 # 总结：
 	
