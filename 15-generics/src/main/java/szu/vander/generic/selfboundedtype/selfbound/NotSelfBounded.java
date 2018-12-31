@@ -1,4 +1,4 @@
-package szu.vander.generic.selfboundedtype;
+package szu.vander.generic.selfboundedtype.selfbound;
 
 //: generics/NotSelfBounded.java
 

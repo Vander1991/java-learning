@@ -1,4 +1,4 @@
-package szu.vander.generic.selfboundedtype;
+package szu.vander.generic.selfboundedtype.paramcovariant;
 
 //: generics/GenericsAndReturnTypes.java
 /**

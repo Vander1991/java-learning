@@ -1,4 +1,4 @@
-package szu.vander.generic.selfboundedtype;
+package szu.vander.generic.selfboundedtype.crgdemo;
 
 //: generics/BasicHolder.java
 
