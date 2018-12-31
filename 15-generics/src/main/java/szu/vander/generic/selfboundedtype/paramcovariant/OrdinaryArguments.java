@@ -1,4 +1,4 @@
-package szu.vander.generic.selfboundedtype;
+package szu.vander.generic.selfboundedtype.paramcovariant;
 
 //: generics/OrdinaryArguments.java
 
@@ -7,8 +7,8 @@ package szu.vander.generic.selfboundedtype;
 * @author      : Vander
 * @date        : 2018-12-25
 * @description : set(Base base)和set(Derived derived)都是合法的，因此DerivedSetter.set()没有覆盖
-* 				OrdinarySetter.set()，而是重载了这个方法，但是使用自限定类型，在导出类中只有一个方法，并且
-* 				接受到处类型而不是基类型为参数，详见
+* 				OrdinarySetter.set()，而是重载了这个方法，但是使用自限定类型，在导出类中只有一个方
+* 				法，并且接受导出类型而不是基类型为参数，详见SelfBoundingAndCovariantArguments.java
  */
 class OrdinarySetter {
 	void set(Base base) {
