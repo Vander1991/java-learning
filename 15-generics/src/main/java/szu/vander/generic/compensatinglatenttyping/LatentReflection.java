@@ -14,7 +14,7 @@ import szu.vander.generic.latenttyping.Performs;
  * @date       : 2018-12-31
  * @description: 使用反射来实现潜在类型机制，调用相应的方法的时候，找到相关类的方法，然后调用，若相关类没有该方法则抛出异常
  * 				这些类完全是彼此分离的，没有任何公共基类（除了Object类）或接口。通过反射，CommunicateReflectively.perform()
- * 				能够动态地确定所需要的方法是否可用并调用它们。它甚至能够处理Mime只具有一个必需的方这一事实，并能够部分实现其目标
+ * 				能够动态地确定所需要的方法是否可用并调用它们。它甚至能够处理Mime只具有一个必需的方法这一事实，并能够部分实现其目标
  */
 class Robot implements Performs {
 	public void speak() {
