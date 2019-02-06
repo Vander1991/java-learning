@@ -20,9 +20,11 @@ class BlockedMutex {
 		try {
 			// This will never be available to a second task
 			print("f()");
+			// 一直等待直到获得锁
 			lock.lockInterruptibly(); // Special call
 			print("lock acquired in f()");
 		} catch (InterruptedException e) {
+			// 线程处于阻塞阶段，收到interrupt的信号后就会进入这个异常。
 			print("Interrupted from lock acquisition in f()");
 		}
 	}
