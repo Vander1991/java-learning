@@ -291,17 +291,47 @@
 			种代码。
 			
 			错失的信号
+				当两个线程使用notify/wait()或notifyAll()/wait()进行协作，有可能会错失某个信号，假设T1是通知T2的线程，这两个线程使用下面
+			的方式。
+				T1：
+					synchronized(sharedMonitor) {
+						// 设置someCondition
+						sharedMonitor.notify();
+					}
 				
+				T2:
+					while(someCondition) {
+						// point1
+						synchronized(sharedMonitor) {
+							sharedMonitor.wait();
+						}
+					}
+				首先调度器运行T2，当前someCondition为false，然后到synchronized(sharedMonitor)，但是此时的对象锁还在T1，然后调度器
+				执行T1，将someCondition设置为true，然后执行sharedMonitor.notify();，接着T1将锁释放，然后调度器又执行会T2，但是此时
+				已经错过了someCondition的判断时机，而T2也将无限的等待这个已经发送过的信号，从而产生死锁。
+					解决方案：
+						该问题的解决方案是防止在someCondition变量上产生竞争条件。下面是T2正确的执行方式：
+						synchronized(shareMonitor) {
+							while(someCondition) {
+								sharedMonitor.wait();
+							}
+						}
+						解决方法实际上就是把判断条件放入同步里面
+				如果T1首先执行，当控制返回T2时，它将发生条件发生了变化，从而不会进入wait()。反过来，如果T2首先执行，那它将进入wait()，并且稍后会由
+				T1唤醒。
 			
+	新类库的构件
+		JDK1.5的concurrent包中引入了大量用来解决并发问题的新类，学习使用它们有助于编写更简单且健壮的并发程序。
+		
+		CountDownLatch
+			它用来同步一个或多个任务，强制它们等待由其他任务执行的一组操作完成。
 			
-			
-			
-			
-			
-			
-			
-			
-			
+		CyclicBarrier
+		
+		DelayQueue
+			这个是一个无界的BlockingQueue，用于放置实现了Delayed接口的对象，其中的对象只能在其到期时才能被消费者从队列中取走。这种队列是有序的，即
+		队头对象的延迟到期时间最短，如果没有任何延迟到期，那么就不会有任何头元素，并且poll()将返回null（正因为如此不能将null放置到这种队列中）
+		
 			
 			
 			
