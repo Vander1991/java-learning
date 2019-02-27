@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>szu.vander</groupId>
+	<artifactId>java-learning</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>java-learning</name>
+	<description>java-learning</description>
+	<packaging>pom</packaging>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<operator.version>0.0.1-SNAPSHOT</operator.version>
+	</properties>
+
+	<!-- dependencyManagement元素既能让子模块继承父模块的配置，又能让子模块依赖使用灵活。 dependencyManagement元素下的依赖不会实际引入到子模块的依赖中，但能约束子模块的依赖使用， 
+		如：一旦子模块需要使用这个依赖，版本号将被限制 -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>szu.vander</groupId>
+				<artifactId>03-operator</artifactId>
+				<version>${operator.version}</version>
+				<type>jar</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- 声明在dependecies元素的依赖将会被子模块继承 -->
+	<dependencies>
+		<dependency>
+			<groupId>szu.vander</groupId>
+			<artifactId>03-operator</artifactId>
+			<version>${operator.version}</version>
+			<type>jar</type>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>03-operator</module>
+		<module>04-process-control</module>
+		<module>05-inital-clean</module>
+		<module>06-access-control</module>
+		<module>07-reusing-classes</module>
+		<module>08-polymorphism</module>
+		<module>09-interfaces</module>
+		<module>10-inner-classes</module>
+		<module>11-holding-your-objects</module>
+		<module>12-error-handling-with-exceptions</module>
+		<module>13-string</module>
+		<module>14-type-information</module>
+		<module>15-generics</module>
+		<module>16-arrays</module>
+		<module>17-containers-in-depth</module>
+		<module>21-concurrency</module>
+	</modules>
+
+</project>
