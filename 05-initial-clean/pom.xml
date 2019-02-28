@@ -4,7 +4,7 @@
     <groupId>szu.vander</groupId>
     <artifactId>java-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-  </parent>  
+  </parent>
   <artifactId>05-initial-clean</artifactId>
   
 </project>

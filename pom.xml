@@ -41,7 +41,7 @@
 	<modules>
 		<module>03-operator</module>
 		<module>04-process-control</module>
-		<module>05-inital-clean</module>
+		<module>05-initial-clean</module>
 		<module>06-access-control</module>
 		<module>07-reusing-classes</module>
 		<module>08-polymorphism</module>
